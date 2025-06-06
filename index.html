@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Blog</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,.1);
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        section {
+            padding: 80px 0;
+        }
+        #about, #contact {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Welcome to My Blog</h1>
+            
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Getting Started with Bootstrap 5</h5>
+                            <p class="card-text">Learn how to quickly set up Bootstrap 5 in your projects and leverage its powerful components.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Posted on January 1, 2023
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering the Grid System</h5>
+                            <p class="card-text">Understand Bootstrap's responsive grid system and create perfect layouts for all devices.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Posted on February 15, 2023
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Utility Classes Explained</h5>
+                            <p class="card-text">Discover how Bootstrap's utility classes can speed up your development workflow.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Posted on March 30, 2023
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Blog Post 4 -->
+                 <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Customizing Bootstrap Themes</h5>
+                        <p class="card-text">Learn how to override default Bootstrap styles to create unique designs.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on April 22, 2023
+                    </div>
+                </div>
+            </div>
+
+             <!-- Blog Post 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsive Navigation</h5>
+                        <p class="card-text">Implement mobile-friendly navigation bars that work on all screen sizes.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on May 10, 2023
+                    </div>
+                </div>
+            </div>
+
+             <!-- Blog Post 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog Post 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Working with Cards</h5>
+                        <p class="card-text">Explore the versatile card component and its many customization options.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on June 5, 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4 mb-4">About Our Blog</h2>
+                    <p class="lead">Welcome to our Bootstrap-powered blog where we share knowledge about web development.</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                                    <h5>Quality Content</h5>
+                                    <p class="text-muted">We provide well-researched articles on Bootstrap and front-end development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                                    <h5>Responsive Design</h5>
+                                    <p class="text-muted">All our tutorials focus on creating mobile-first responsive layouts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                    <h5>Community</h5>
+                                    <p class="text-muted">Join our growing community of Bootstrap enthusiasts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h3>Our Mission</h3>
+                        <p>We aim to make Bootstrap accessible to everyone, from beginners to advanced developers, through clear examples and practical tutorials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 text-center mb-5">Contact Us</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Our Location</h5>
+                                    <p class="text-muted">123 Web Dev Street<br>Bootstrap City, BS 12345</p>
+                                    
+                                    <h5 class="mt-4"><i class="fas fa-envelope text-primary me-2"></i> Email Us</h5>
+                                    <p class="text-muted">contact@bootstrapblog.com</p>
+                                    
+                                    <h5 class="mt-4"><i class="fas fa-phone text-primary me-2"></i> Call Us</h5>
+                                    <p class="text-muted">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="mb-4">Send Us a Message</h5>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+            <p class="mb-0">© 2023 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth scrolling and active link highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all nav links
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Scroll to the target section
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        document.querySelector(targetId).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Update active link on scroll
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                
+                document.querySelectorAll('section').forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
